@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <BorderPane prefHeight="426.0" prefWidth="448.0" BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ComboBox editable="true" layoutX="40.0" layoutY="44.0" prefWidth="150.0" promptText="Dorm" visibleRowCount="5" />
+                  <ComboBox fx:id="comboBoxDorm" editable="true" layoutX="40.0" layoutY="44.0" prefWidth="150.0" promptText="Dorm" visibleRowCount="5" />
+                  
+                  <Button fx:id="btnCalculate" layoutX="290.0" layoutY="135.0" mnemonicParsing="false" text="Calculate Total" onAction="#Calculate" />
+         
+                  <ComboBox editable="true" layoutX="240.0" layoutY="44.0" prefWidth="150.0" promptText="Meals" />
+                  <ComboBox fx:id="comboBoxMeals" editable="true" layoutX="240.0" layoutY="44.0" prefWidth="150.0" promptText="Meals" visibleRowCount="5" />
+                  
+                  <Label fx:id="labelOutput" layoutX="108.0" layoutY="150.0" prefHeight="146.0" prefWidth="232.0" text="Screen for output display" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
